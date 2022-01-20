@@ -1,0 +1,110 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding:5px 0;
+    background-color: blueviolet;
+}
+.medsos ul li {
+    display: inline-block;
+    color: #fff;
+}
+.container {
+    width:80%;
+    margin:0 auto;
+}
+.container:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding:15px 0;
+    color:blueviolet;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a {
+    padding:25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: blueviolet;
+    color:white;
+}
+.active {
+    background-color: blueviolet;
+    color:white;  
+}
+ h2 {
+    text-align: center;
+    color: blueviolet;
+    padding: 10px;
+}
+.formulir{
+    color: blueviolet;
+    padding: 1em;
+    margin: 1em auto;
+    width: 350px;
+}
+input[type=text] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 5px solid blueviolet;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 5px solid black;
+}
+input[type=number] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 5px solid blueviolet;
+    outline: none;
+}
+input[type=number]:focus {
+    border: 5px solid blueviolet;
+}
+input[type=text]:focus {
+    border: 5px solid blueviolet;
+}
+input[type=submit] {
+    background-color: blueviolet;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+input[type=reset] {
+    background-color: blueviolet;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+input[type=submit]:hover {
+    background-color: grey;
+}
+input[type=reset]:hover {
+    background-color: grey;
+}
+.copy {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px
+}

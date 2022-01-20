@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1">
+        <title>Product</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+    </head>
+    <body>
+        <div class="medsos">
+            <div class="container">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+            <h1><a href="index.html">ZEUS JERSEY</a></h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="active"><a href="">PRODUCT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+            </div>
+        </header>
+        
+        <section class="jersey">
+            <div class="container">
+            <img src="juve.jpg" width="250" height="200"  alt="madrid">  
+             <h5>Rp 500.000</h5>
+             <h3>JERSEY JUVENTUS 2020</h3>
+             <p>Spesifikasi:</p>
+             <p>-100% Original</p>
+             <p>-Bahan Polyester 100%</p>
+             <p>-Tidak Panas</p>
+             <p>-Keren dan elegan</p>
+             <h3><a href="beli.html">BELI</a></h3>
+             <h3><a href="product.html">KEMBALI</a></h3>
+            </div>
+        </section>
+        <p id="demo"></p>
+        <p align="center">Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
+     <script>
+         var tw = new Date();
+         if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + (7 *60*60*1000))
+         else (a=tw.getTime());
+         tw.setTime(a);
+         var tahun= tw.getFullYear ();
+         var hari= tw.getDay ();
+         var bulan= tw.getMonth ();
+         var tanggal= tw.getDate ();
+         var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jumat,","Sabtu,");
+         var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+         document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" WIB ");
+     </script>
+     <footer>
+         <div class="copy">
+             <small>Copyright &copy; 2022 -Zeus Jersey</small>
+         </div>
+     </footer>   
+
+        </body>
+</html>
